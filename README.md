@@ -99,3 +99,42 @@ The `change_owner` function facilitates ownership changes, updating the owner's 
 ## License
 
 This smart contract is released under the [MIT License](LICENSE). Feel free to use, modify, and distribute it as needed.
+
+# Ticket Token Module
+
+The `TicketProjectToken::ticket_token` module defines a Move smart contract for managing a custom token called `TICKET_TOKEN`. This token is designed for use in the Ticket Project and is responsible for ticket purchases.
+
+## Table of Contents
+
+1. [Introduction](#introduction)
+2. [Smart Contract Components](#smart-contract-components)
+    - [TICKET_TOKEN](#ticket_token)
+3. [Initialization](#initialization)
+4. [Minting Function](#minting-function)
+5. [License](#license)
+
+## Introduction
+
+The `TICKET_TOKEN` module is a part of the Ticket Project and is dedicated to managing the custom token used for purchasing tickets on the platform. It provides functionalities for initialization, minting, and includes a testing scenario.
+
+## Smart Contract Components
+
+### TICKET_TOKEN
+
+The `TICKET_TOKEN` struct represents the custom token used in the Ticket Project. It is designed to be used for ticket purchases within the platform.
+
+## Initialization
+
+The `init` function initializes the `TICKET_TOKEN` by creating its treasury cap, defining metadata, and minting an initial supply of tokens to the owner. It also transfers the treasury cap to the owner.
+
+## Minting Function
+
+The `mint` function allows the owner to mint additional `TICKET_TOKENs` and transfer them to a specified recipient. It also shares the minting information by creating a `Check` object.
+
+## Testing
+
+The module includes a testing scenario (`coin_tests_metadata`), which is currently commented out. This scenario aims to test coin metadata functionality, specifically the initialization of the `TICKET_TOKEN` and metadata retrieval.
+
+## License
+
+This smart contract is released under the [MIT License](LICENSE). Feel free to use, modify, and distribute it as needed.
